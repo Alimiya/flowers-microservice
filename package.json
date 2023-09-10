@@ -1,0 +1,25 @@
+{
+  "name": "flower",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "profile": "node profileManagement/index.js",
+    "store": "node storeManagement/index.js",
+    "flower": "node flowerManagement/index.js",
+    "delivery": "node deliveryManagement/index.js",
+    "payment": "node paymentManagement/index.js",
+    "proxy": "node apiGateway/gateway.js",
+    "dev": "concurrently \"npm run profile\" \"npm run store\" \"npm run flower\" \"npm run delivery\" \"npm run payment\" \"npm run proxy\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^8.2.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "mongoose": "^7.5.0"
+  }
+}

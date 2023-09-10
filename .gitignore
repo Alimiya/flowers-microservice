@@ -1,0 +1,7 @@
+/node_modules
+/apiGateway/config
+/profileManagement/config
+/deliveryManagement/config
+/flowerManagement/config
+/storeManagement/config
+/paymentManagement/config
