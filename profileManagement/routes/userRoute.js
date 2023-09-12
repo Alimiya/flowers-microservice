@@ -1,12 +1,13 @@
 const express = require('express')
 const router = express.Router()
 const Controller = require('../controllers/userController')
+const verify = require('../../middlewares/authVerify')
 
-router.get('/', Controller.getAllUsers)
-router.get('/orders/:id', Controller.getUserOrders)
-router.get('/:id', Controller.getUserById)
-router.post('/', Controller.createUser)
-router.put('/:id', Controller.updateUserById)
-router.delete('/:id', Controller.deleteUserById)
+router.get('/',verify, Controller.getAllUsers)
+router.get('/orders/:id',verify, Controller.getUserOrders)
+router.get('/:id',verify, Controller.getUserById)
+router.post('/',verify, Controller.createUser)
+router.put('/:id',verify, Controller.updateUserById)
+router.delete('/:id',verify, Controller.deleteUserById)
 
 module.exports = router

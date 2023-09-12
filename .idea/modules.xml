@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/flower.iml" filepath="$PROJECT_DIR$/.idea/flower.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jwt/.idea/jwt.iml" filepath="$PROJECT_DIR$/../jwt/.idea/jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/../microrest/.idea/microrest.iml" filepath="$PROJECT_DIR$/../microrest/.idea/microrest.iml" />
       <module fileurl="file://$PROJECT_DIR$/../nemeree/.idea/nemeree.iml" filepath="$PROJECT_DIR$/../nemeree/.idea/nemeree.iml" />
     </modules>

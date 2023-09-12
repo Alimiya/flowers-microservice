@@ -8,18 +8,27 @@
     "flower": "node flowerManagement/index.js",
     "delivery": "node deliveryManagement/index.js",
     "payment": "node paymentManagement/index.js",
+    "auth": "node authManagement/index.js",
     "proxy": "node apiGateway/gateway.js",
-    "dev": "concurrently \"npm run profile\" \"npm run store\" \"npm run flower\" \"npm run delivery\" \"npm run payment\" \"npm run proxy\""
+    "dev": "concurrently \"npm run profile\" \"npm run store\" \"npm run flower\" \"npm run delivery\" \"npm run payment\" \"npm run auth\" \"npm run proxy\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "chai": "^4.3.8",
+    "chai-http": "^4.4.0",
     "concurrently": "^8.2.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "http-proxy-middleware": "^2.0.6",
+    "jsonwebtoken": "^9.0.2",
+    "mocha": "^10.2.0",
     "mongoose": "^7.5.0"
   }
 }

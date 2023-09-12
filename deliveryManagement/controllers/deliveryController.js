@@ -24,12 +24,13 @@ exports.getDeliveryById = async (req, res) => {
 }
 
 exports.createOrder = async (req, res) => {
-    const {method, address, cost, storeId, flowerId, userId} = req.body;
+    const {method, address,date, cost, storeId, flowerId, userId} = req.body;
 
     try {
         const newOrder = await Delivery.create({
             method,
             address,
+            date,
             cost,
             storeId,
             flowerId,

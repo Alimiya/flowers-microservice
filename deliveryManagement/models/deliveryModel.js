@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const deliverySchema = new mongoose.Schema({
     method: {type: String,enum:["Курьер","Самовывоз"]},
     address: {type: String, required: true},
-    date: {type: Date},
+    date: {type: String},
     cost: {type: Number, required: true},
     userId: {
         type: mongoose.Schema.Types.ObjectId,

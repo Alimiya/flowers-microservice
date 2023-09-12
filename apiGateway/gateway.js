@@ -4,7 +4,6 @@ const dotenv = require("dotenv")
 
 dotenv.config({path: './apiGateway/config/.env'})
 
-
 const app = express()
 
 const routes = {
@@ -13,6 +12,7 @@ const routes = {
     '/api/flowers': 'http://localhost:3003',
     '/api/deliveries': 'http://localhost:3004',
     '/api/payments': 'http://localhost:3005',
+    '/api/auth': 'http://localhost:3006',
 }
 
 for (const route in routes) {

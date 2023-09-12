@@ -1,11 +1,12 @@
 const express = require('express')
 const router = express.Router()
 const Controller = require('../controllers/deliveryController')
+const verify = require('../../middlewares/authVerify')
 
-router.get('/', Controller.getAllDeliveries)
-router.get('/:id', Controller.getDeliveryById)
-router.post('/', Controller.createOrder)
-router.put('/send/:id', Controller.sendOrder)
-router.put('/complete/:id', Controller.completeOrder)
+router.get('/', verify, Controller.getAllDeliveries)
+router.get('/:id', verify, Controller.getDeliveryById)
+router.post('/', verify, Controller.createOrder)
+router.put('/send/:id', verify, Controller.sendOrder)
+router.put('/complete/:id', verify, Controller.completeOrder)
 
 module.exports = router
